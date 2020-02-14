@@ -2,12 +2,19 @@ package com.mvc.model;
 
 public class Car {
 	
+	String brand;
 	String name; 
     String model; 
     int year; 
     float price;
     String registrationNumber;
     
+	public String getBrand() {
+		return brand;
+	}
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
 	public String getName() {
 		return name;
 	}
@@ -38,4 +45,5 @@ public class Car {
     public void setRegistrationNumber(String registrationNumber) {
         this.registrationNumber = registrationNumber;
     }
+
 }

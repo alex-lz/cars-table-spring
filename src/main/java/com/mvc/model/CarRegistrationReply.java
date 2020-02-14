@@ -2,6 +2,7 @@ package com.mvc.model;
 
 public class CarRegistrationReply {
 	
+	String brand;
 	String name; 
     String model; 
     int year; 
@@ -9,6 +10,12 @@ public class CarRegistrationReply {
     String registrationNumber;
     String registrationStatus;
     
+	public String getBrand() {
+		return brand;
+	}
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
 	public String getName() {
 		return name;
 	}
