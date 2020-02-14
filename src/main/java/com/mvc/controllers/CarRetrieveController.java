@@ -14,8 +14,8 @@ import com.mvc.model.CarRegistration;
 public class CarRetrieveController {
 	
   @RequestMapping(method = RequestMethod.GET, value="/car/allcars")
-  @ResponseBody
   
+  @ResponseBody
   public List<Car> getAllCars() {
       return CarRegistration.getInstance().getCarRecords();
   }

@@ -17,7 +17,7 @@ public class CarRegistrationController {
   
     @ResponseBody
     public CarRegistrationReply registerCar(@RequestBody Car car) {
-        System.out.println("In registerCar");
+        System.out.println("In register Car");
         CarRegistrationReply carregreply = new CarRegistrationReply();           
         CarRegistration.getInstance().add(car);
         //We are setting the below value just to reply a message back to the caller
